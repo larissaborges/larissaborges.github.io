@@ -1,43 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Share+Tech+Mono&display=swap"
+      rel="stylesheet"
+    />
     <title>larissa borges</title>
-</head>
-<body>
-   <nav>
-       <ul class="menu">
+  </head>
+  <body>
+    <nav>
+      <ul class="menu">
         <li class="logo"><a href="#">larissa borges</a></li>
         <li class="item"><a href="#">sobre mim</a></li>
         <li class="item"><a href="#">contato</a></li>
-        <li class="toggle"><a href="#"><i class="fa fa-bars" aria-hidden="true"></i></a></li>
-       </ul>
-   </nav>
-   <section class="presentation">
-    <h1>{Front-end Developer}</h1>
-    <span>Oi, meu nome é Larissa e eu faço sites 100% responsivos! Aqui estão alguns dos meus trabalhos recentes.</span>
-   </section>
-</body>
-<script>
+        <li class="toggle">
+          <a href="#"><i class="fa fa-bars" aria-hidden="true"></i></a>
+        </li>
+      </ul>
+    </nav>
+    <section class="presentation">
+      <h1>{Front-end Developer}</h1>
+      <span>
+        Olá! Me chamo Larissa e eu faço sites 100% responsivos! Aqui estão
+        alguns dos meus trabalhos recentes:
+      </span>
+      <div class="sidenav">
+        <ul>
+          <li><a href=""></a>um</li>
+          <li><a href=""></a>dois</li>
+          <li><a href=""></a>tres</li>
+        </ul>
+      </div>
+    </section>
+    <section>
+      <div class="container projects">
+        <div class="row">
+          <div class="card col-md-3">
+            <img class="card-img-top" src="..." alt="Card image cap" />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+          <div class="card col-md-3">
+            <img class="card-img-top" src="..." alt="Card image cap" />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+          <div class="card col-md-3">
+            <img class="card-img-top" src="..." alt="Card image cap" />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+          <div class="card col-md-3">
+            <img class="card-img-top" src="..." alt="Card image cap" />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+          <div class="card col-md-3">
+            <img class="card-img-top" src="..." alt="Card image cap" />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script>
+    const toggle = document.querySelector(".toggle");
+    const menu = document.querySelector(".menu");
 
-const toggle = document.querySelector('.toggle');
-const menu = document.querySelector('.menu');
+    function toggleMenu() {
+      if (menu.classList.contains("active")) {
+        menu.classList.remove("active");
+        toggle.querySelector("a").innerHTML =
+          '<i class="fa fa-bars" aria-hidden="true"></i>';
+      } else {
+        menu.classList.add("active");
+        toggle.querySelector("a").innerHTML =
+          '<i class="fa fa-times" aria-hidden="true"></i>';
+      }
+    }
 
-function toggleMenu(){
-if(menu.classList.contains("active")){
-    menu.classList.remove("active");
-    toggle.querySelector('a').innerHTML = '<i class="fa fa-bars" aria-hidden="true"></i>'
-} else {
-    menu.classList.add("active");
-    toggle.querySelector('a').innerHTML = '<i class="fa fa-times" aria-hidden="true"></i>'
-
-}
-}
-
-toggle.addEventListener('click', toggleMenu, false);</script>
+    toggle.addEventListener("click", toggleMenu, false);
+  </script>
 </html>
