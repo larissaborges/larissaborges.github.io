@@ -25,12 +25,7 @@ nav{
     text-align: center;
     justify-content: center;
 }
-.sidenav {
-    background-color: #ccc;
-    position: fixed;
-    left: 0;
-    top: 50%;
-}
+
 a{
     color: #111111;
     text-decoration: none;
@@ -96,16 +91,21 @@ a{
     align-items: center;
 }
 .bg-form{
+    text-align: center;
     width: 80%;
     padding: 20px;
-        /* background-image: linear-gradient(#1b0729, #481768); */
+    margin: 80px;
+}
+form{
+    margin: 40px 0;
 }
 .container h2 {
     color: black;
     font-size: 2rem;
     text-align: center;
-    margin-bottom: 30px;
+    margin: 40px;
 }
+
 .wrapper {
     width: 100%;
     display: grid;
@@ -170,13 +170,24 @@ a{
 }
 .swiper-container {
     max-width: 1000px;
-    height: 300px;
+    min-height: 200px;
+    max-height: 400px;
+    margin: 50px 0px;
 }
 .swiper-slide {
     padding: 20px;
 }
 .swiper-slide img {
     width: 100%;
+}
+.icones-section {
+    position: relative;
+    z-index: 0;
+
+}
+.icones {
+    text-align: center;
+    font-size: 30px;
 }
 /* mobile menu */
 
@@ -228,5 +239,14 @@ a{
     }
     .toggle{
         display: none;
+    }
+}
+@media(max-width: 767px) {
+    .swiper-slide{
+        min-width: 25%;
+        padding: 10px;
+    }
+    .presentation {
+        padding: 100px 10px 30px 10px;
     }
 }
