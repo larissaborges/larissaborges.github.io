@@ -227,7 +227,10 @@ form{
 .presentation h1{
     font-family: 'Share Tech Mono', monospace;
 }
-
+footer {
+    background: #000000;
+    min-height: 300px;
+}
 @media(min-width: 700px){
     .logo{
         flex: 1;
