@@ -24,17 +24,21 @@
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
-    <script src="https://kit.fontawesome.com/c44d79ec16.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/c44d79ec16.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
     <title>larissa borges</title>
   </head>
   <body>
     <nav>
-      <ul class="menu">
+      <ul class="menu js-menu">
         <li class="logo"><a href="#">larissa borges</a></li>
-        <li class="item"><a href="#">sobre mim</a></li>
-        <li class="item"><a href="#">contato</a></li>
+        <li class="item"><a href="#projetos">projetos</a></li>
+        <li class="item"><a href="#contato">contato</a></li>
         <li class="toggle">
           <a href="#"><i class="fa fa-bars" aria-hidden="true"></i></a>
         </li>
@@ -47,8 +51,8 @@
           <img src="./assets/eu.jpg" alt="" />
         </div>
         <p class="texto-perfil">
-          Olá! Eu me chamo Larissa, trabalho com desenvolvimento front-end e faço sites 100%
-          responsivos! 
+          Olá! Eu me chamo Larissa, trabalho com desenvolvimento front-end e
+          faço sites 100% responsivos!
         </p>
       </div>
     </section>
@@ -87,8 +91,41 @@
     </section>
     <section>
       <div class="container-fluid">
-        <div class="icones"><span>Alguns dos meus trabalhos recentes:</span></div>
+        <div class="icones" id="projetos">
+          <span>Alguns dos meus trabalhos recentes:</span>
+        </div>
         <div class="row projects">
+          <div class="card" style="width: 18rem">
+            <img
+              class="card-img-top"
+              src="./assets/ranek.jpeg"
+              alt="Landing Page Amava"
+            />
+            <div class="card-body">
+              <h5 class="card-title">E-commerce <strong>Ranek</strong></h5>
+              <p class="card-text">
+                Landind Page feita para empresa de marketing digital fictícia
+                Amava.
+              </p>
+              <a href="#" class="btn btn-outline-primary">Ver Site</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem">
+            <img
+              class="card-img-top"
+              src="./assets/gh-finder.jpeg"
+              alt="Landing Page Pina Café"
+            />
+            <div class="card-body">
+              <h5 class="card-title">
+                Landing Page <strong>Pina Café</strong>
+              </h5>
+              <p class="card-text">
+                Landing Page/Site para a empresa fictícia Pina café.
+              </p>
+              <a href="#" class="btn btn-outline-primary">Ver Site</a>
+            </div>
+          </div>
           <div class="card" style="width: 18rem">
             <img
               class="card-img-top"
@@ -120,17 +157,6 @@
               <a href="#" class="btn btn-outline-primary">Ver Site</a>
             </div>
           </div>
-          <div class="card" style="width: 18rem">
-            <img class="card-img-top" src="..." alt="Card image cap" />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-              <a href="#" class="btn btn-outline-primary">Ver Site</a>
-            </div>
-          </div>
           <!-- <div class="card" style="width: 18rem">
             <img class="card-img-top" src="..." alt="Card image cap" />
             <div class="card-body">
@@ -158,7 +184,7 @@
         </div>
       </div>
     </section>
-    <section class="container-fluid contato">
+    <section class="container-fluid contato" id="contato">
       <div class="container bg-form">
         <h2>Vamos trabalhar em algum projeto juntos?</h2>
         <span>Seu email pode ser respondido em até 1 dia útil.*</span>
@@ -186,46 +212,29 @@
         </form>
       </div>
     </section>
+    <div id="wpp" class="phone-call cbh-phone cbh-green cbh-show cbh-static" id="clbh_phone_div" style="position: fixed; bottom: -50px; right: -55px;">
+      <a id="whatsAppButtonFloat" class="phoneJs">
+        <div class="cbh-ph-circle"></div>
+        <div class="cbh-ph-circle-fill"></div>
+        <div class="cbh-ph-img-circle1"></div>
+      </a>
+    </div>
     <footer>
       <div class="icons">
-          <a href=""><i class="fab fa-linkedin-in"></i></a>
-          <a href=""><i class="fab fa-github"></i></a>
-          <a href="mailto: larissafurtado12@live.com"><i class="far fa-envelope"></i></a>
+        <a href=""><i class="fab fa-linkedin-in"></i></a>
+        <a href=""><i class="fab fa-github"></i></a>
+        <a href="mailto: larissafurtado12@live.com"
+          ><i class="far fa-envelope"></i
+        ></a>
       </div>
-      <p>2020 Copyright  |  feito por <a href="https://github.com/larissaborges" target="_blank">github.com/larissaborges</a></p>
+      <p>
+        2020 Copyright | feito por
+        <a href="https://github.com/larissaborges" target="_blank"
+          >github.com/larissaborges</a
+        >
+      </p>
     </footer>
   </body>
-  <script>
-    const toggle = document.querySelector(".toggle");
-    const menu = document.querySelector(".menu");
-
-    function toggleMenu() {
-      if (menu.classList.contains("active")) {
-        menu.classList.remove("active");
-        toggle.querySelector("a").innerHTML =
-          '<i class="fa fa-bars" aria-hidden="true"></i>';
-      } else {
-        menu.classList.add("active");
-        toggle.querySelector("a").innerHTML =
-          '<i class="fa fa-times" aria-hidden="true"></i>';
-      }
-    }
-
-    toggle.addEventListener("click", toggleMenu, false);
-    var mySwiper = new Swiper(".swiper-container", {
-      direction: "horizontal",
-      loop: true,
-      slidesPerView: 6,
-      autoplay: {
-        delay: 2000,
-        disableOnInteraction: false
-      },
-      pagination: {
-        el: ".swiper-pagination",
-        type: 'bullets',
-        dynamicBullets: true,
-        // dynamicMainBullets: 4,
-      },
-    });
-  </script>
+  <script src="./script.js"></script>
+    
 </html>
