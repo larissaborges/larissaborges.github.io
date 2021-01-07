@@ -307,6 +307,12 @@ footer p, footer a{
 ::-webkit-scrollbar-thumb{
     background-color: cyan;
 }
+.swiper-pagination-bullet-active {
+    background-color: cyan !important;
+}
+.swiper-pagination-bullet{
+    background-color: #000000 !important;
+}
 
  /* Whatsapp Button */
 
