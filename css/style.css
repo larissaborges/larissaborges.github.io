@@ -78,6 +78,9 @@ a{
     font-size: 30px;
     text-decoration: none;
 }
+.logo a:hover{
+  color: #111111 !important;
+}
 
 .item a:hover{
     text-decoration: none;
@@ -157,10 +160,8 @@ form{
     border: none;
     transition: all 0.3s;
 }
-.btn-form button:hover{
-    background-color: cyan;
-    color: #000000;
-    /* border: 1px solid #000000; */
+.btn-form button{
+  outline-color: transparent !important;
 }
 .perfil {
     text-align: center;
@@ -216,6 +217,11 @@ footer p{
 footer p, footer a{
     color: white;
     font-size: 13px;
+    transition: 0.3s;
+}
+footer p a:hover{
+  text-decoration: none !important;
+  color: #ccc;
 }
 .icons {
     text-align: center;
@@ -224,13 +230,13 @@ footer p, footer a{
     font-size: 25px;
     padding: 15px;
     margin: 40px 10px;
-    color: cyan;
+    color: white;
     border: 1px solid;
     border-radius: 50%;
     transition: all 0.3s;
 }
 .icons a i:hover{
-    background-color: cyan;
+    background-color: white;
     color: #000000;
 }
 /* mobile menu */
@@ -301,15 +307,14 @@ footer p, footer a{
     }
 }
 ::-webkit-scrollbar{
-    background-color: #000000;
+    background-color: #f1f1f1;
     width: 8px;
 }
 ::-webkit-scrollbar-thumb{
-    background-color: cyan;
+    background-color: #ccc;
+    border-radius: 10px;
 }
-.swiper-pagination-bullet-active {
-    background-color: cyan !important;
-}
+
 .swiper-pagination-bullet{
     background-color: #000000 !important;
 }
