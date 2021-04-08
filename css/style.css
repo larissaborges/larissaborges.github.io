@@ -72,7 +72,6 @@ a {
   font-size: 20px;
   color: white;
 }
-
 .logo a {
   padding: 0 20px !important;
   text-decoration: none;
@@ -809,13 +808,13 @@ footer p a:hover {
 .cbh-ph-img-circle1 {
 }
 .cbh-phone.cbh-green .cbh-ph-circle {
-  border-color: rgb(0, 242, 164);
+  border-color: #111111;
 }
 .cbh-phone.cbh-green .cbh-ph-circle-fill {
-  background-color: rgb(0, 242, 164);
+  background-color: #111111;
 }
 .cbh-phone.cbh-green .cbh-ph-img-circle1 {
-  background-color: rgb(0, 242, 164);
+  background-color: #111111;
 }
 
 .kmacb__manager-border {
