@@ -210,6 +210,10 @@ form {
 .titulo{
   font-size: 20px;
 }
+.subtitulo{
+  font-size: 12px;
+  margin: 20px;
+}
 footer {
   background: #000000;
   text-align: center;
